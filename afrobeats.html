@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Afrobeats 🎵</title>
+    <style>
+      body {
+        background: radial-gradient(circle at 10% 20%, rgb(255, 197, 61) 0%, rgb(255, 94, 7) 90%);
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+        text-align: center;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        border: 1px solid #b912f1;
+        border-radius: 10px;
+        background: white;
+        font-size: 25px;
+        padding: 10px;
+      }
+
+      button:hover {
+        background: #c34deb;
+        cursor: pointer;
+        transition: all 250ms ease-in-out;
+      }
+      .container {
+        max-width: 600px;
+        margin: 20px auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      footer {
+        text-align: center;
+        margin: 10px 0;
+        font-size: 18px;
+      }
+
+      .theme-button {
+        font-size: 15px;
+        background: black;
+        color: white;
+        padding: 10px;
+        border-radius: 15px;
+      }
+
+      .theme-button:hover {
+        color: black;
+        background: white;
+      }
+
+      .afrobeats-cover-art {
+        border-radius: 10px;
+        transition: all 250ms ease-in-out;
+      }
+
+      .afrobeats-cover-art:hover {
+        filter: contrast(70%);
+        transform: scale(1.1);
+      }
+
+      .grid {
+        margin: 15px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 15px;
+      }
+
+      .grid img {
+        width: 100%;
+        border-radius: 10px;
+        transition: all 250ms ease-in-out;
+      }
+
+      .grid img:hover {
+        transform: scale(1.5) rotate(360deg);
+        transition: all 1s ease-in-out;
+        border-radius: 70px;
+      }
+
+      .dark {
+        background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/101/412/original/sky.jpg?1697834158");
+        color: white;
+      }
+
+      .dark .container {
+        background: rgba(255, 255, 255, 0.1);
+      }
+
+      .dark a {
+        color: #e77924;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="theme-button">Change Theme</button>
+    <div class="container">
+      <h1>Afrobeats</h1>
+      <h2>My favorite musical style</h2>
+
+      <a href="https://en.wikipedia.org/wiki/Afrobeats" target="_blank">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/101/291/original/afrobeat-cover.png?1697732571"
+          alt="Afrobeats Art"
+          class="afrobeats-cover-art"
+        />
+      </a>
+      <div class="grid">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/101/399/original/burna-boy.jpg?1697826207"
+          alt="Burna Boy"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/101/396/original/wizkid.jpg?1697825368"
+          alt="Wizkid"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/101/288/original/asake.jpg?1697732537"
+          alt="Asake"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/101/286/original/davido.jpg?1697732507"
+          alt="Davido"
+        />
+      </div>
+      <p>
+        <strong>Afrobeats</strong> – a combination of temporal sounds
+        originating in West Africa in the 21st century, one that takes in
+        diverse influences and is an eclectic combination of genres such as hip
+        hop, house, jùjú, ndombolo, R&B and soca. Some of my favorite Afrobeats
+        artists are; Burna Boy, Wizkid, Asake, and Davido.
+        <br />
+        <br />
+        <a href="https://en.wikipedia.org/wiki/Afrobeats" target="_blank"
+          ><strong>Learn more about Afrobeats here</strong></a
+        >
+      </p>
+
+      <button>🎶 Listen to Afrobeats 🎶</button>
+    </div>
+    <footer>Coded by Ashley Carmél St. Louis 👩🏾‍💻</footer>
+
+    <script>
+        function changeTheme() {
+            let body = document.querySelector("body");
+
+            body.classList.toggle("dark");
+        }
+
+        let themeButton =document.querySelector(".theme-button");
+        themeButton.addEventListener("click", changeTheme);
+    </script>
+  </body>
+</html>
